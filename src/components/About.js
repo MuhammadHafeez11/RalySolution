@@ -1,50 +1,219 @@
 export default function About() {
   return (
-    <div id="about" className="container">
-      <div className="space100"></div>
+    <div id="about" style={{ padding: '0 15px' }}>
+      <div style={{ height: '100px' }}></div>
       {/* INFO CONTENT */}
-      <div className="info-content">
-        <div className="container">
-          <div className="row center-content">
-            <div className="col-md-6">
-              <h3>The Story Behind Raly Solutions</h3>
-              <img src="/images/line.png" className="img-responsive" alt="" /><br />
-              <p>
+      <div style={{ padding: '80px 0' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 15px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '60px', flexWrap: 'wrap' }}>
+            <div style={{ flex: '1', minWidth: '300px' }}>
+              <h3 style={{ 
+                fontFamily: 'Nunito Sans, sans-serif', 
+                fontSize: '60px', 
+                fontWeight: '900', 
+                color: '#024d94', 
+                marginBottom: '20px',
+                lineHeight: '1.1'
+              }}>The Story Behind Raly Solutions</h3>
+              <img src="/images/line.png" style={{ marginBottom: '25px', maxWidth: '100px' }} alt="" />
+              <p style={{
+                fontFamily: 'Open Sans, sans-serif',
+                fontSize: '16px',
+                lineHeight: '28px',
+                color: '#555',
+                fontWeight: '400',
+                marginBottom: '10px'
+              }}>
                 Founded by a passionate healthcare instructor with years of experience in sterile processing and surgical services, Raly Solutions was created to fill a gap in high-quality SPD training. Our platform is committed to raising the standard of infection control through knowledge, mentorship, and innovation.
               </p>
-              <p>
+              <p style={{
+                fontFamily: 'Open Sans, sans-serif',
+                fontSize: '16px',
+                lineHeight: '28px',
+                color: '#555',
+                fontWeight: '400',
+                marginBottom: '10px'
+              }}>
                 We believe the sterile processing department is the heart of patient safety — yet it's one of the most overlooked areas in healthcare. Our mission is to educate, empower, and elevate professionals in this critical field.
               </p>
-              <ul className="list">
-                <li><i className="icon-check">✓</i> Excellence in Education</li>
-                <li><i className="icon-check">✓</i> Integrity & Compliance</li>
-                <li><i className="icon-check">✓</i> Student-Centered Approach</li>
-                <li><i className="icon-check">✓</i> Innovation & Technology</li>
-                <li><i className="icon-check">✓</i> Empowering Healthcare Workers</li>
+              <ul style={{ listStyle: 'none', padding: '0', margin: '0' }}>
+                <li style={{
+                  fontFamily: 'Open Sans, sans-serif',
+                  fontSize: '16px',
+                  color: '#555',
+                  padding: '6px 0 9px 35px',
+                  position: 'relative'
+                }}>
+                  <i style={{
+                    minWidth: '30px',
+                    color: '#024d94',
+                    position: 'absolute',
+                    left: '0',
+                    top: '4px',
+                    fontSize: '25px'
+                  }}>✓</i>
+                  Excellence in Education
+                </li>
+                <li style={{
+                  fontFamily: 'Open Sans, sans-serif',
+                  fontSize: '16px',
+                  color: '#555',
+                  padding: '6px 0 9px 35px',
+                  position: 'relative'
+                }}>
+                  <i style={{
+                    minWidth: '30px',
+                    color: '#024d94',
+                    position: 'absolute',
+                    left: '0',
+                    top: '4px',
+                    fontSize: '25px'
+                  }}>✓</i>
+                  Integrity & Compliance
+                </li>
+                <li style={{
+                  fontFamily: 'Open Sans, sans-serif',
+                  fontSize: '16px',
+                  color: '#555',
+                  padding: '6px 0 9px 35px',
+                  position: 'relative'
+                }}>
+                  <i style={{
+                    minWidth: '30px',
+                    color: '#024d94',
+                    position: 'absolute',
+                    left: '0',
+                    top: '4px',
+                    fontSize: '25px'
+                  }}>✓</i>
+                  Student-Centered Approach
+                </li>
+                <li style={{
+                  fontFamily: 'Open Sans, sans-serif',
+                  fontSize: '16px',
+                  color: '#555',
+                  padding: '6px 0 9px 35px',
+                  position: 'relative'
+                }}>
+                  <i style={{
+                    minWidth: '30px',
+                    color: '#024d94',
+                    position: 'absolute',
+                    left: '0',
+                    top: '4px',
+                    fontSize: '25px'
+                  }}>✓</i>
+                  Innovation & Technology
+                </li>
+                <li style={{
+                  fontFamily: 'Open Sans, sans-serif',
+                  fontSize: '16px',
+                  color: '#555',
+                  padding: '6px 0 9px 35px',
+                  position: 'relative'
+                }}>
+                  <i style={{
+                    minWidth: '30px',
+                    color: '#024d94',
+                    position: 'absolute',
+                    left: '0',
+                    top: '4px',
+                    fontSize: '25px'
+                  }}>✓</i>
+                  Empowering Healthcare Workers
+                </li>
               </ul>
-              <div className="space30"></div>
-              <a href="#courses" className="inline-block text-[#024d94] bg-[#f8d171] border-2 border-[#f8d171] px-6 py-3 text-sm font-bold font-nunito hover:bg-transparent hover:text-[#024d94] hover:border-[#024d94] transition-all duration-400">
-                Explore Our Courses <i className="ml-[10px] relative top-[1px]">→</i>
+              <div style={{ marginBottom: '30px' }}></div>
+              <a href="#courses" style={{
+                display: 'inline-block',
+                fontSize: '16px',
+                lineHeight: '20px',
+                fontWeight: '700',
+                textTransform: 'capitalize',
+                padding: '10px 20px',
+                border: 'none',
+                borderRadius: '0',
+                fontFamily: 'Nunito Sans, sans-serif',
+                color: '#024d94',
+                backgroundColor: '#f8d171',
+                border: '2px solid #f8d171',
+                textDecoration: 'none',
+                transition: 'all 0.4s ease'
+              }}
+              onMouseEnter={(e) => {
+                e.target.style.border = '2px solid #024d94';
+                e.target.style.backgroundColor = 'white';
+                e.target.style.color = '#024d94';
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.border = '2px solid #f8d171';
+                e.target.style.backgroundColor = '#f8d171';
+                e.target.style.color = '#024d94';
+              }}>
+                Learn More →
               </a>
             </div>
-            <div className="col-md-6 text-center">
-              <div className="bg-[#f8f8f8] p-8 rounded-lg">
-                <div className="w-32 h-32 bg-[#024d94] rounded-full mx-auto mb-6 flex items-center justify-center">
-                  <span className="text-white text-4xl font-bold">RS</span>
-                </div>
-                <h4 className="text-[#024d94] font-bold text-xl mb-4">Meet Our Founder</h4>
-                <p className="text-gray-600 italic text-lg leading-relaxed">
-                  "Training students is not just about sharing knowledge — it's about changing lives and making hospitals safer."
-                </p>
-                <div className="mt-6">
-                  <p className="text-sm text-gray-500">Healthcare Instructor & SPD Expert</p>
-                </div>
-              </div>
+            <div style={{ flex: '1', minWidth: '300px', textAlign: 'center' }}>
+              <img src="/images/feature/01.png" style={{ maxWidth: '100%', height: 'auto' }} alt="" />
             </div>
           </div>
         </div>
       </div>
-      <br /><br /><br />
+      
+      {/* Meet Our Founder Section */}
+      <div style={{ height: '100px' }}></div>
+      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 15px' }}>
+        <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+          <div style={{
+            backgroundColor: '#f8f8f8',
+            padding: '60px 40px',
+            borderRadius: '10px',
+            textAlign: 'center'
+          }}>
+            <div style={{
+              width: '120px',
+              height: '120px',
+              backgroundColor: '#024d94',
+              borderRadius: '50%',
+              margin: '0 auto 30px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center'
+            }}>
+              <span style={{
+                color: '#fff',
+                fontSize: '36px',
+                fontFamily: 'Nunito Sans, sans-serif',
+                fontWeight: '700'
+              }}>RS</span>
+            </div>
+            <h4 style={{
+              fontFamily: 'Nunito Sans, sans-serif',
+              fontSize: '24px',
+              fontWeight: '700',
+              color: '#024d94',
+              marginBottom: '20px'
+            }}>Meet Our Founder</h4>
+            <p style={{
+              fontFamily: 'Open Sans, sans-serif',
+              fontSize: '18px',
+              fontStyle: 'italic',
+              lineHeight: '1.6',
+              color: '#666',
+              marginBottom: '25px'
+            }}>
+              "Training students is not just about sharing knowledge — it's about changing lives and making hospitals safer."
+            </p>
+            <p style={{
+              fontFamily: 'Open Sans, sans-serif',
+              fontSize: '14px',
+              color: '#999'
+            }}>Healthcare Instructor & SPD Expert</p>
+          </div>
+        </div>
+      </div>
+      
+      <div style={{ height: '100px' }}></div>
     </div>
   );
 }

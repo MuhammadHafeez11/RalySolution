@@ -16,101 +16,203 @@ export default function Header() {
 
   return (
     <header>
-      <nav className={`fixed top-0 left-0 right-0 z-[1030] border-0 min-h-[86px] font-nunito transition-all duration-400 ${
-        isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
-      }`}>
-        <div className="max-w-[1170px] mx-auto px-4">
-          <div className="flex items-center justify-between min-h-[86px]">
+      <nav style={{
+        position: 'fixed',
+        right: 0,
+        left: 0,
+        top: 0,
+        fontFamily: 'Nunito Sans, sans-serif',
+        borderWidth: 0,
+        borderRadius: 0,
+        background: isScrolled ? '#fff' : 'transparent',
+        zIndex: 1030,
+        minHeight: isScrolled ? '35px' : '86px',
+        marginBottom: 0,
+        border: 'none',
+        transition: 'all 0.4s',
+        boxShadow: isScrolled ? '0 2px 10px rgba(0,0,0,0.1)' : 'none'
+      }}>
+        <div style={{
+          maxWidth: '1170px',
+          margin: '0 auto',
+          padding: '0 15px'
+        }}>
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            minHeight: isScrolled ? '35px' : '86px'
+          }}>
             {/* Logo */}
-            <div className="float-left">
-              <a href="index.html" className="inline-block p-0 leading-[86px]">
+            <div>
+              <a href="#hero" style={{
+                padding: '0 0 0',
+                fontSize: '28px',
+                fontWeight: 700,
+                textTransform: 'uppercase',
+                color: '#fff',
+                letterSpacing: '5px',
+                textDecoration: 'none'
+              }}>
                 <img src="/images/logo.png" alt="logo" />
               </a>
             </div>
 
-            {/* Mobile Toggle Button */}
-            <button 
-              type="button" 
-              className="md:hidden float-right mt-[25px] mr-4 p-[9px_10px] bg-transparent border border-transparent rounded"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
-              <span className="sr-only">Toggle navigation</span>
-              <span className="block w-[22px] h-[2px] rounded-sm bg-black mb-1"></span>
-              <span className="block w-[22px] h-[2px] rounded-sm bg-black mb-1"></span>
-              <span className="block w-[22px] h-[2px] rounded-sm bg-black"></span>
-            </button>
-
-            {/* Navigation Menu */}
-            <div className={`${isMenuOpen ? 'block' : 'hidden'} md:block absolute md:relative top-[86px] md:top-0 left-0 right-0 md:left-auto md:right-auto w-full md:w-auto max-w-[500px] md:max-w-none mx-auto md:mx-0 bg-black md:bg-transparent`}>
+            {/* Navigation */}
+            <div style={{
+              display: 'flex',
+              alignItems: 'center'
+            }}>
               
-              {/* Enroll Now Button */}
-              <ul className="md:float-right md:mt-[10px] md:ml-[10px] m-0 p-0 list-none">
+              {/* Main Navigation */}
+              <ul style={{
+                margin: 0,
+                paddingLeft: 0,
+                marginBottom: 0,
+                listStyle: 'none',
+                display: 'flex',
+                alignItems: 'center'
+              }}>
                 <li>
                   <a 
-                    href="#application" 
-                    className="inline-block bg-[#f8d171] text-[#024d94] px-[23px] py-[5px] font-bold text-base leading-5 capitalize border-2 border-[#f8d171] rounded-none font-nunito mt-[25px] hover:border-[#024d94] hover:bg-transparent hover:text-[#024d94] transition-all duration-400"
-                  >
-                    Enroll Now
-                  </a>
-                </li>
-              </ul>
-
-              {/* Main Navigation */}
-              <ul className="md:float-right m-0 p-0 list-none">
-                <li className="md:float-left">
-                  <a 
-                    href="#hero" 
-                    className="block md:inline-block px-[30px] md:px-3 py-[7px] md:py-[40px] text-[12px] md:text-[14px] leading-[1.6] text-white md:text-[#024d94] font-nunito font-bold hover:text-white md:hover:text-black transition-all duration-400"
+                    href="#hero"
+                    style={{
+                      padding: '40px 12px 35px',
+                      fontSize: '14px',
+                      lineHeight: 1.6,
+                      color: '#024d94',
+                      fontFamily: 'Nunito Sans',
+                      fontWeight: 700,
+                      textDecoration: 'none',
+                      display: 'block'
+                    }}
+                    onMouseOver={(e) => e.target.style.color = '#000000'}
+                    onMouseOut={(e) => e.target.style.color = '#024d94'}
                   >
                     Home
                   </a>
                 </li>
-
-                <li className="md:float-left">
+                <li>
                   <a 
-                    href="#about" 
-                    className="block md:inline-block px-[30px] md:px-3 py-[7px] md:py-[40px] text-[12px] md:text-[14px] leading-[1.6] text-white md:text-[#024d94] font-nunito font-bold hover:text-white md:hover:text-black transition-all duration-400"
+                    href="#about"
+                    style={{
+                      padding: '40px 12px 35px',
+                      fontSize: '14px',
+                      lineHeight: 1.6,
+                      color: '#024d94',
+                      fontFamily: 'Nunito Sans',
+                      fontWeight: 700,
+                      textDecoration: 'none',
+                      display: 'block'
+                    }}
+                    onMouseOver={(e) => e.target.style.color = '#000000'}
+                    onMouseOut={(e) => e.target.style.color = '#024d94'}
                   >
-                    About Us
+                    About
                   </a>
                 </li>
-
-                <li className="md:float-left">
+                <li>
                   <a 
-                    href="#courses" 
-                    className="block md:inline-block px-[30px] md:px-3 py-[7px] md:py-[40px] text-[12px] md:text-[14px] leading-[1.6] text-white md:text-[#024d94] font-nunito font-bold hover:text-white md:hover:text-black transition-all duration-400"
+                    href="#courses"
+                    style={{
+                      padding: '40px 12px 35px',
+                      fontSize: '14px',
+                      lineHeight: 1.6,
+                      color: '#024d94',
+                      fontFamily: 'Nunito Sans',
+                      fontWeight: 700,
+                      textDecoration: 'none',
+                      display: 'block'
+                    }}
+                    onMouseOver={(e) => e.target.style.color = '#000000'}
+                    onMouseOut={(e) => e.target.style.color = '#024d94'}
                   >
                     Courses
                   </a>
                 </li>
-
-                <li className="md:float-left">
+                <li>
                   <a 
-                    href="#masterclass" 
-                    className="block md:inline-block px-[30px] md:px-3 py-[7px] md:py-[40px] text-[12px] md:text-[14px] leading-[1.6] text-white md:text-[#024d94] font-nunito font-bold hover:text-white md:hover:text-black transition-all duration-400"
+                    href="#masterclass"
+                    style={{
+                      padding: '40px 12px 35px',
+                      fontSize: '14px',
+                      lineHeight: 1.6,
+                      color: '#024d94',
+                      fontFamily: 'Nunito Sans',
+                      fontWeight: 700,
+                      textDecoration: 'none',
+                      display: 'block'
+                    }}
+                    onMouseOver={(e) => e.target.style.color = '#000000'}
+                    onMouseOut={(e) => e.target.style.color = '#024d94'}
                   >
                     Consulting
                   </a>
                 </li>
-                
-                <li className="md:float-left">
+                <li>
                   <a 
-                    href="#community" 
-                    className="block md:inline-block px-[30px] md:px-3 py-[7px] md:py-[40px] text-[12px] md:text-[14px] leading-[1.6] text-white md:text-[#024d94] font-nunito font-bold hover:text-white md:hover:text-black transition-all duration-400"
+                    href="#community"
+                    style={{
+                      padding: '40px 12px 35px',
+                      fontSize: '14px',
+                      lineHeight: 1.6,
+                      color: '#024d94',
+                      fontFamily: 'Nunito Sans',
+                      fontWeight: 700,
+                      textDecoration: 'none',
+                      display: 'block'
+                    }}
+                    onMouseOver={(e) => e.target.style.color = '#000000'}
+                    onMouseOut={(e) => e.target.style.color = '#024d94'}
                   >
                     Community
                   </a>
                 </li>
-
-                <li className="md:float-left">
+                <li>
                   <a 
-                    href="#contact" 
-                    className="block md:inline-block px-[30px] md:px-3 py-[7px] md:py-[40px] text-[12px] md:text-[14px] leading-[1.6] text-white md:text-[#024d94] font-nunito font-bold hover:text-white md:hover:text-black transition-all duration-400"
+                    href="#contact"
+                    style={{
+                      padding: '40px 12px 35px',
+                      fontSize: '14px',
+                      lineHeight: 1.6,
+                      color: '#024d94',
+                      fontFamily: 'Nunito Sans',
+                      fontWeight: 700,
+                      textDecoration: 'none',
+                      display: 'block'
+                    }}
+                    onMouseOver={(e) => e.target.style.color = '#000000'}
+                    onMouseOut={(e) => e.target.style.color = '#024d94'}
                   >
                     Contact
                   </a>
                 </li>
               </ul>
+
+              {/* Enroll Now Button */}
+              <a 
+                href="#application"
+                style={{
+                  border: '1px solid #024d94',
+                  background: '#024d94',
+                  color: '#fff',
+                  padding: '5px 23px',
+                  fontWeight: 700,
+                  marginLeft: '20px',
+                  textDecoration: 'none',
+                  display: 'inline-block'
+                }}
+                onMouseOver={(e) => {
+                  e.target.style.background = '#fff';
+                  e.target.style.color = '#024d94';
+                }}
+                onMouseOut={(e) => {
+                  e.target.style.background = '#024d94';
+                  e.target.style.color = '#fff';
+                }}
+              >
+                Enroll Now
+              </a>
             </div>
           </div>
         </div>

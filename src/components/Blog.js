@@ -70,21 +70,79 @@ export default function Blog() {
           <h4 className="text-2xl font-bold text-[#024d94] text-center mb-12">Latest Articles</h4>
           <div className="grid md:grid-cols-2 gap-8">
             {sampleBlogs.map((blog, index) => (
-              <article key={index} className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 group cursor-pointer">
-                <div className="p-8">
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="inline-block bg-[#f8d171] text-[#024d94] px-3 py-1 rounded-full text-sm font-semibold">
+              <article key={index} style={{
+                backgroundColor: 'white',
+                borderRadius: '12px',
+                boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
+                transition: 'all 0.3s ease',
+                overflow: 'hidden',
+                border: '1px solid #f3f4f6',
+                cursor: 'pointer',
+                display: 'flex',
+                flexDirection: 'column',
+                height: '100%'
+              }}>
+                <div style={{ padding: '32px', flex: '1', display: 'flex', flexDirection: 'column' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '16px' }}>
+                    <span style={{
+                      display: 'inline-block',
+                      backgroundColor: '#f8d171',
+                      color: '#024d94',
+                      padding: '4px 12px',
+                      borderRadius: '9999px',
+                      fontSize: '14px',
+                      fontWeight: '600'
+                    }}>
                       {blog.category}
                     </span>
-                    <span className="text-gray-500 text-sm">{blog.readTime}</span>
+                    <span style={{ color: '#6b7280', fontSize: '14px' }}>{blog.readTime}</span>
                   </div>
-                  <h5 className="text-xl font-bold text-[#024d94] mb-3 group-hover:text-[#024d94] transition-colors duration-300">
+                  <h5 style={{
+                    fontSize: '20px',
+                    fontWeight: 'bold',
+                    color: '#024d94',
+                    marginBottom: '12px',
+                    fontFamily: 'Nunito Sans, sans-serif',
+                    flex: '0 0 auto'
+                  }}>
                     {blog.title}
                   </h5>
-                  <p className="text-gray-600 leading-relaxed mb-4">{blog.excerpt}</p>
-                  <div className="flex items-center text-[#024d94] font-semibold group-hover:text-[#f8d171] transition-colors duration-300">
-                    <span>Read More</span>
-                    <i className="icon-arrow-right ml-2"></i>
+                  <p style={{
+                    color: '#6b7280',
+                    lineHeight: '1.6',
+                    marginBottom: '16px',
+                    fontFamily: 'Open Sans, sans-serif',
+                    flex: '1'
+                  }}>{blog.excerpt}</p>
+                  <div style={{ marginTop: 'auto' }}>
+                    <a href="#read-more" style={{
+                      display: 'inline-block',
+                      fontSize: '16px',
+                      lineHeight: '20px',
+                      fontWeight: '700',
+                      textTransform: 'capitalize',
+                      padding: '10px 20px',
+                      border: 'none',
+                      borderRadius: '0',
+                      fontFamily: 'Nunito Sans, sans-serif',
+                      color: '#024d94',
+                      backgroundColor: '#f8d171',
+                      border: '2px solid #f8d171',
+                      textDecoration: 'none',
+                      transition: 'all 0.4s ease'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.target.style.border = '2px solid #024d94';
+                      e.target.style.backgroundColor = 'transparent';
+                      e.target.style.color = '#024d94';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.target.style.border = '2px solid #f8d171';
+                      e.target.style.backgroundColor = '#f8d171';
+                      e.target.style.color = '#024d94';
+                    }}>
+                      Read More →
+                    </a>
                   </div>
                 </div>
               </article>
@@ -112,11 +170,62 @@ export default function Blog() {
 
         {/* CTA Buttons */}
         <div className="text-center mt-16">
-          <a href="#all-posts" className="inline-block bg-[#f8d171] text-[#024d94] px-5 py-[10px] font-bold text-base leading-5 capitalize border-2 border-[#f8d171] rounded-none font-nunito hover:border-[#024d94] hover:bg-transparent hover:text-[#024d94] transition-all duration-400 mr-4">
-            View All Posts <i className="icon-arrow-right ml-[10px] relative top-[1px]"></i>
+          <a href="#all-posts" style={{
+            display: 'inline-block',
+            fontSize: '16px',
+            lineHeight: '20px',
+            fontWeight: '700',
+            textTransform: 'capitalize',
+            padding: '10px 20px',
+            border: 'none',
+            borderRadius: '0',
+            fontFamily: 'Nunito Sans, sans-serif',
+            color: '#024d94',
+            backgroundColor: '#f8d171',
+            border: '2px solid #f8d171',
+            textDecoration: 'none',
+            marginRight: '15px',
+            transition: 'all 0.4s ease'
+          }}
+          onMouseEnter={(e) => {
+            e.target.style.border = '2px solid #024d94';
+            e.target.style.backgroundColor = 'transparent';
+            e.target.style.color = '#024d94';
+          }}
+          onMouseLeave={(e) => {
+            e.target.style.border = '2px solid #f8d171';
+            e.target.style.backgroundColor = '#f8d171';
+            e.target.style.color = '#024d94';
+          }}>
+            View All Posts →
           </a>
-          <a href="#courses" className="inline-block bg-[#024d94] text-white px-5 py-[10px] font-bold text-base leading-5 capitalize border-2 border-[#024d94] rounded-none font-nunito hover:bg-transparent hover:text-[#024d94] transition-all duration-400">
-            Explore Courses <i className="icon-arrow-right ml-[10px] relative top-[1px]"></i>
+          <a href="#courses" style={{
+            display: 'inline-block',
+            fontSize: '16px',
+            lineHeight: '20px',
+            fontWeight: '700',
+            textTransform: 'capitalize',
+            padding: '10px 20px',
+            border: 'none',
+            borderRadius: '0',
+            fontFamily: 'Nunito Sans, sans-serif',
+            color: '#fff',
+            backgroundColor: '#024d94',
+            border: '2px solid #024d94',
+            textDecoration: 'none',
+            transition: 'all 0.4s ease'
+          }}
+          onMouseEnter={(e) => {
+            e.target.style.border = '2px solid #024d94';
+            e.target.style.backgroundColor = 'transparent';
+            e.target.style.color = '#024d94';
+          }}
+          onMouseLeave={(e) => {
+            e.target.style.border = '2px solid #024d94';
+            e.target.style.backgroundColor = '#024d94';
+            e.target.style.color = '#fff';
+          }}>
+            Explore Courses →
           </a>
         </div>
       </div>

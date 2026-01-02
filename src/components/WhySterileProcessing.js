@@ -17,7 +17,7 @@ export default function WhySterileProcessing() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center p-8 bg-[#024d94] rounded-xl text-white">
               <div className="text-5xl font-bold text-[#f8d171] mb-4">1 in 20</div>
-              <p className="text-lg text-white">Hospital infections is linked to improper instrument sterilization</p>
+              <p className="text-lg !text-white">Hospital infections is linked to improper instrument sterilization</p>
             </div>
             <div className="text-center p-8 bg-[#f8d171] rounded-xl">
               <div className="text-5xl font-bold text-[#024d94] mb-4">High</div>
@@ -27,7 +27,7 @@ export default function WhySterileProcessing() {
             <div className="text-center p-8 bg-[#024d94] rounded-xl text-white">
               <div className="text-4xl font-bold text-[#f8d171] mb-4">Career</div>
               <div className="text-lg font-semibold mb-2 text-[#f8d171]">Growth</div>
-              <p className="text-white">Certification leads to job security, advancement, and higher pay</p>
+              <p className="!text-white">Certification leads to job security, advancement, and higher pay</p>
             </div>
           </div>
         </div>
@@ -87,8 +87,8 @@ export default function WhySterileProcessing() {
                 <div className="w-24 h-24 bg-[#f8d171] rounded-full flex items-center justify-center mx-auto mb-6">
                   <i className="icon-heart text-[#024d94] text-4xl"></i>
                 </div>
-                <h3 className="text-3xl font-bold mb-4 text-white">Make a Difference</h3>
-                <p className="text-xl text-white mb-8">Every instrument you process saves lives and prevents infections</p>
+                <h3 className="text-3xl font-bold mb-4 !text-white">Make a Difference</h3>
+                <p className="text-xl !text-white mb-8">Every instrument you process saves lives and prevents infections</p>
               </div>
               
               <div className="grid grid-cols-2 gap-6 text-center">

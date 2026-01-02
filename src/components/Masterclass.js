@@ -67,8 +67,8 @@ export default function Masterclass() {
               <div className="w-20 h-20 bg-[#f8d171] rounded-full flex items-center justify-center mx-auto mb-6">
                 <i className="icon-users text-[#024d94] text-3xl"></i>
               </div>
-              <h3 className="text-2xl font-bold mb-4">Join Live Sessions</h3>
-              <p className="text-lg mb-8">Connect with industry experts and fellow professionals in real-time</p>
+              <h3 className="text-2xl font-bold mb-4 !text-white">Join Live Sessions</h3>
+              <p className="text-lg mb-8 !text-white">Connect with industry experts and fellow professionals in real-time</p>
               
               <div className="grid grid-cols-2 gap-4 mb-6">
                 <div className="bg-white/10 rounded-lg p-4">

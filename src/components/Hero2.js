@@ -1,17 +1,68 @@
 export default function Hero2() {
   return (
-    <div id="hero" className="intro hero2">
+    <div id="hero" className="intro hero2" style={{paddingTop: '120px'}}>
       <div className="container">
         <div className="row">
           <div className="col-md-10 col-md-offset-1 text-center">
-            <h3>Empowering Sterile Processing<br />Professionals Worldwide</h3>
+            <h3 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight">Empowering Sterile Processing<br />Professionals Worldwide</h3>
             <p>Your gateway to high-quality online training, coaching, webinars, ebooks, and certification programs in the healthcare industry's most essential department—Sterile Processing.</p>
             <div className="space40"></div>
             <div className="dual-btn">
-              <a href="#courses" className="inline-block text-[#024d94] bg-[#f8d171] border-2 border-[#f8d171] px-6 py-3 text-sm font-bold font-nunito hover:bg-transparent hover:text-[#f8d171] hover:border-[#f8d171] transition-all duration-400 mr-4">
+              <a href="#courses" style={{
+                display: 'inline-block',
+                fontSize: '16px',
+                lineHeight: '20px',
+                fontWeight: '700',
+                textTransform: 'capitalize',
+                padding: '10px 20px',
+                border: 'none',
+                borderRadius: '0',
+                fontFamily: 'Nunito Sans, sans-serif',
+                color: '#024d94',
+                backgroundColor: '#f8d171',
+                border: '2px solid #f8d171',
+                textDecoration: 'none',
+                marginRight: '15px',
+                transition: 'all 0.4s ease'
+              }}
+              onMouseEnter={(e) => {
+                e.target.style.border = '2px solid #024d94';
+                e.target.style.backgroundColor = 'transparent';
+                e.target.style.color = '#024d94';
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.border = '2px solid #f8d171';
+                e.target.style.backgroundColor = '#f8d171';
+                e.target.style.color = '#024d94';
+              }}>
                 Browse Courses
               </a>
-              <a href="#ebook" className="inline-block text-white bg-transparent border-2 border-white px-6 py-3 text-sm font-bold font-nunito hover:bg-white hover:text-[#024d94] transition-all duration-400">
+              <a href="#ebook" style={{
+                display: 'inline-block',
+                fontSize: '16px',
+                lineHeight: '20px',
+                fontWeight: '700',
+                textTransform: 'capitalize',
+                padding: '10px 20px',
+                border: 'none',
+                borderRadius: '0',
+                fontFamily: 'Nunito Sans, sans-serif',
+                color: '#fff',
+                backgroundColor: '#024d94',
+                border: '2px solid #024d94',
+                textDecoration: 'none',
+                transition: 'all 0.4s ease'
+              }}
+              onMouseEnter={(e) => {
+                e.target.style.border = '2px solid #024d94';
+                e.target.style.backgroundColor = 'transparent';
+                e.target.style.color = '#024d94';
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.border = '2px solid #024d94';
+                e.target.style.backgroundColor = '#024d94';
+                e.target.style.color = '#fff';
+              }}>
                 Get Free eBook
               </a>
             </div>
@@ -29,7 +80,33 @@ export default function Hero2() {
                       <input placeholder="Email Address" type="email" required />
                     </div>
                     <div className="col-md-4 col-sm-4">
-                      <button className="inline-block text-[#024d94] bg-[#f8d171] border-2 border-[#f8d171] px-6 py-3 text-sm font-bold font-nunito hover:bg-transparent hover:text-[#f8d171] hover:border-[#f8d171] transition-all duration-400 w-full" type="submit">
+                      <button style={{
+                        display: 'inline-block',
+                        fontSize: '16px',
+                        lineHeight: '20px',
+                        fontWeight: '700',
+                        textTransform: 'capitalize',
+                        padding: '10px 20px',
+                        border: 'none',
+                        borderRadius: '0',
+                        fontFamily: 'Nunito Sans, sans-serif',
+                        color: '#024d94',
+                        backgroundColor: '#f8d171',
+                        border: '2px solid #f8d171',
+                        width: '100%',
+                        cursor: 'pointer',
+                        transition: 'all 0.4s ease'
+                      }}
+                      onMouseEnter={(e) => {
+                        e.target.style.border = '2px solid #024d94';
+                        e.target.style.backgroundColor = 'transparent';
+                        e.target.style.color = '#024d94';
+                      }}
+                      onMouseLeave={(e) => {
+                        e.target.style.border = '2px solid #f8d171';
+                        e.target.style.backgroundColor = '#f8d171';
+                        e.target.style.color = '#024d94';
+                      }} type="submit">
                         Apply for Enrollment
                       </button>
                     </div>

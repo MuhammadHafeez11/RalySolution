@@ -1,37 +1,108 @@
 export default function Testimonials() {
   return (
     <>
-      <div className="space100"></div>
-      <div className="review">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <i className="icon-quote-left"></i>
-              <div className="flex gap-5 justify-center items-center w-full max-w-4xl mx-auto">
-                <div className="bg-[#024d94] p-6 w-[341px]">
-                  <p className="!text-white text-xl leading-8 italic mb-5">"Raly Solutions helped me land a job in sterile processing right after I completed the course!"</p>
-                  <img src="./images/bg/five-star.png" alt="img" className="max-w-[120px] mb-4" />
-                  <span className="text-[#f8d171] font-bold text-base capitalize block">
-                    Jessica A. <br /> <small className="!text-white font-light text-sm"> SPD Technician </small>
+      <div style={{ marginBottom: '100px' }}></div>
+      <div style={{
+        background: '#f8d171',
+        paddingTop: '150px',
+        paddingBottom: '-50px'
+      }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 15px' }}>
+          <div>
+            <div>
+              <i style={{
+                color: '#fff',
+                fontSize: '75px',
+                margin: '0px auto 30px',
+                display: 'table'
+              }}>“</i>
+              <div style={{ display: 'flex', gap: '30px', justifyContent: 'center', alignItems: 'flex-start', width: '100%', maxWidth: '1200px', margin: '0 auto' }}>
+                <div style={{
+                  background: '#024d94',
+                  padding: '25px',
+                  width: '400px',
+                  borderRadius: '0',
+                  display: 'block'
+                }}>
+                  <p style={{
+                    fontSize: '21px',
+                    lineHeight: '33px',
+                    fontWeight: '400',
+                    color: '#fff',
+                    padding: '0 0 20px',
+                    letterSpacing: '0',
+                    fontStyle: 'italic',
+                    fontFamily: 'Open Sans, sans-serif'
+                  }}>"Raly Solutions helped me land a job in sterile processing right after I completed the course!"</p>
+                  <img src="./images/bg/five-star.png" alt="img" style={{ maxWidth: '120px', padding: '0px 0px 15px 15px' }} />
+                  <span style={{
+                    fontWeight: 'bold',
+                    fontSize: '16px',
+                    textTransform: 'capitalize',
+                    letterSpacing: '0.2px',
+                    color: '#f8d171',
+                    paddingLeft: '15px',
+                    fontFamily: 'Open Sans, sans-serif'
+                  }}>
+                    Jessica A. <br /> <small style={{
+                      paddingLeft: '15px',
+                      fontWeight: '300',
+                      color: '#fff'
+                    }}> SPD Technician </small>
                   </span>
                 </div>
-                <div className="bg-[#024d94] p-6 w-[341px]">
-                  <p className="!text-white text-xl leading-8 italic mb-5">"The ebook was a game-changer. It opened my eyes to the importance of SPD in patient care."</p>
-                  <img src="./images/bg/five-star.png" alt="img" className="max-w-[120px] mb-4" />
-                  <span className="text-[#f8d171] font-bold text-base capitalize block">
-                    Samuel R. <br /> <small className="!text-white font-light text-sm"> Healthcare Professional </small>
+                <div style={{
+                  background: '#024d94',
+                  padding: '25px',
+                  width: '400px',
+                  borderRadius: '0',
+                  display: 'block'
+                }}>
+                  <p style={{
+                    fontSize: '21px',
+                    lineHeight: '33px',
+                    fontWeight: '400',
+                    color: '#fff',
+                    padding: '0 0 20px',
+                    letterSpacing: '0',
+                    fontStyle: 'italic',
+                    fontFamily: 'Open Sans, sans-serif'
+                  }}>"The ebook was a game-changer. It opened my eyes to the importance of SPD in patient care."</p>
+                  <img src="./images/bg/five-star.png" alt="img" style={{ maxWidth: '120px', padding: '0px 0px 15px 15px' }} />
+                  <span style={{
+                    fontWeight: 'bold',
+                    fontSize: '16px',
+                    textTransform: 'capitalize',
+                    letterSpacing: '0.2px',
+                    color: '#f8d171',
+                    paddingLeft: '15px',
+                    fontFamily: 'Open Sans, sans-serif'
+                  }}>
+                    Samuel R. <br /> <small style={{
+                      paddingLeft: '15px',
+                      fontWeight: '300',
+                      color: '#fff'
+                    }}> Healthcare Professional </small>
                   </span>
                 </div>
               </div>
             </div>
           </div>
-          <div className="review-title col-md-12">
+          <div style={{
+            fontSize: '280px',
+            color: '#fff',
+            fontWeight: '700',
+            opacity: '0.1',
+            margin: '-170px 0 -60px 0px',
+            textAlign: 'center',
+            fontFamily: 'Nunito Sans, sans-serif'
+          }}>
             <h1>REVIEW</h1>
           </div>
         </div>
       </div>
-      <div className="clearfix"></div>
-      <div className="space100"></div>
+      <div style={{ clear: 'both' }}></div>
+      <div style={{ marginBottom: '100px' }}></div>
     </>
   );
 }

@@ -24,8 +24,33 @@ export default function Mission() {
           </div>
           
           <div className="text-center">
-            <a href="#courses" className="inline-block border border-[#024d94] bg-[#024d94] text-white px-8 py-3 font-bold hover:bg-black hover:border-black transition-all duration-400">
-              Explore Our Courses <i className="icon-arrow-right ml-2"></i>
+            <a href="#courses" style={{
+              display: 'inline-block',
+              fontSize: '16px',
+              lineHeight: '20px',
+              fontWeight: '700',
+              textTransform: 'capitalize',
+              padding: '10px 20px',
+              border: 'none',
+              borderRadius: '0',
+              fontFamily: 'Nunito Sans, sans-serif',
+              color: '#024d94',
+              backgroundColor: '#f8d171',
+              border: '2px solid #f8d171',
+              textDecoration: 'none',
+              transition: 'all 0.4s ease'
+            }}
+            onMouseEnter={(e) => {
+              e.target.style.border = '2px solid #024d94';
+              e.target.style.backgroundColor = 'transparent';
+              e.target.style.color = '#024d94';
+            }}
+            onMouseLeave={(e) => {
+              e.target.style.border = '2px solid #f8d171';
+              e.target.style.backgroundColor = '#f8d171';
+              e.target.style.color = '#024d94';
+            }}>
+              Explore Our Courses →
             </a>
           </div>
         </div>
