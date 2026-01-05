@@ -1,6 +1,11 @@
 'use client';
 import Header from '@/components/Header';
 import Hero2 from '@/components/Hero2';
+import WhatIsRaly from '@/components/WhatIsRaly';
+import WhatWeOffer from '@/components/WhatWeOffer';
+import BuiltForYou from '@/components/BuiltForYou';
+import Testimonials from '@/components/Testimonials';
+import FeaturedCTA from '@/components/FeaturedCTA';
 import About from '@/components/About';
 import Mission from '@/components/Mission';
 import Courses from '@/components/Courses';
@@ -11,7 +16,6 @@ import CourseApplication from '@/components/CourseApplication';
 import Pricing from '@/components/Pricing';
 import FAQSection from '@/components/FAQ';
 import Community from '@/components/Community';
-import Testimonials from '@/components/Testimonials';
 import Blog from '@/components/Blog';
 import Footer from '@/components/Footer';
 import Contact from '@/components/Contact';
@@ -22,16 +26,19 @@ export default function Home() {
       <div className="body">
         <Header />
         <Hero2 />
+        <WhatIsRaly />
+        <WhatWeOffer />
+        <BuiltForYou />
+        <Testimonials />
+        <FeaturedCTA />
         <About />
         <Mission />
         <Courses />
         <WhySterileProcessing />
         <FreeEbook />
         <Masterclass />
-        <CourseApplication />
         <Pricing />
         <Community />
-        <Testimonials />
         <Blog />
         <FAQSection />
         <Contact />

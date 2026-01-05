@@ -113,7 +113,7 @@ export default function Header() {
                 </li>
                 <li>
                   <a 
-                    href="#courses"
+                    href="/courses"
                     style={{
                       padding: '40px 12px 35px',
                       fontSize: '14px',
@@ -132,7 +132,7 @@ export default function Header() {
                 </li>
                 <li>
                   <a 
-                    href="#masterclass"
+                    href="/consultation"
                     style={{
                       padding: '40px 12px 35px',
                       fontSize: '14px',
@@ -151,7 +151,7 @@ export default function Header() {
                 </li>
                 <li>
                   <a 
-                    href="#community"
+                    href="/coaching"
                     style={{
                       padding: '40px 12px 35px',
                       fontSize: '14px',
@@ -165,7 +165,7 @@ export default function Header() {
                     onMouseOver={(e) => e.target.style.color = '#000000'}
                     onMouseOut={(e) => e.target.style.color = '#024d94'}
                   >
-                    Community
+                    Coaching
                   </a>
                 </li>
                 <li>
@@ -191,7 +191,7 @@ export default function Header() {
 
               {/* Enroll Now Button */}
               <a 
-                href="#application"
+                href="/courses"
                 style={{
                   border: '1px solid #024d94',
                   background: '#024d94',
