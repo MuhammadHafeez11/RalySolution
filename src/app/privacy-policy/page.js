@@ -7,7 +7,7 @@ export default function PrivacyPolicyPage() {
     <div className="min-h-screen">
       <div className="body">
         <Header />
-        <div style={{ paddingTop: '120px', paddingBottom: '80px' }}>
+        <div style={{ paddingTop: '120px', paddingBottom: '80px', backgroundColor: '#f8f9fa' }}>
           <div className="container" style={{ maxWidth: '900px', margin: '0 auto', padding: '0 15px' }}>
             <div style={{ textAlign: 'center', marginBottom: '50px' }}>
               <h1 style={{ fontSize: '42px', fontWeight: '700', color: '#024d94', marginBottom: '20px', fontFamily: 'Nunito Sans, sans-serif' }}>
@@ -19,73 +19,64 @@ export default function PrivacyPolicyPage() {
               </p>
             </div>
 
-            <div style={{ backgroundColor: '#fff', padding: '40px', borderRadius: '8px', boxShadow: '0 2px 10px rgba(0,0,0,0.1)' }}>
+            <div style={{ backgroundColor: '#fff', padding: '50px', borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.1)', border: '1px solid #e9ecef' }}>
               
-              <section style={{ marginBottom: '40px' }}>
-                <h2 style={{ fontSize: '24px', fontWeight: '600', color: '#024d94', marginBottom: '20px' }}>Information We Collect</h2>
-                <p style={{ fontSize: '16px', lineHeight: '1.6', color: '#555', marginBottom: '15px' }}>
-                  We collect information you provide directly to us, such as when you create an account, enroll in courses, or contact us for support.
-                </p>
+              <section style={{ marginBottom: '50px', padding: '30px', backgroundColor: '#f8f9fa', borderRadius: '8px', borderLeft: '4px solid #024d94' }}>
+                <h2 style={{ fontSize: '24px', fontWeight: '600', color: '#024d94', marginBottom: '20px', display: 'flex', alignItems: 'center' }}>
+                  <span style={{ fontSize: '28px', marginRight: '10px' }}>📊</span>
+                  Information We Collect
+                </h2>
                 <ul style={{ fontSize: '16px', lineHeight: '1.6', color: '#555', paddingLeft: '20px' }}>
-                  <li>Name and contact information</li>
-                  <li>Educational and professional background</li>
-                  <li>Course progress and completion data</li>
-                  <li>Payment information (processed securely by third parties)</li>
+                  <li>Personal data (name, email, phone number, billing address)</li>
+                  <li>Course progress and completion</li>
+                  <li>Consultation and support tickets</li>
+                  <li>Payment and subscription info (processed securely via third-party gateways)</li>
                 </ul>
               </section>
 
-              <section style={{ marginBottom: '40px' }}>
-                <h2 style={{ fontSize: '24px', fontWeight: '600', color: '#024d94', marginBottom: '20px' }}>How We Use Your Information</h2>
+              <section style={{ marginBottom: '50px', padding: '30px', backgroundColor: '#f8f9fa', borderRadius: '8px', borderLeft: '4px solid #f8d171' }}>
+                <h2 style={{ fontSize: '24px', fontWeight: '600', color: '#024d94', marginBottom: '20px', display: 'flex', alignItems: 'center' }}>
+                  <span style={{ fontSize: '28px', marginRight: '10px' }}>🔧</span>
+                  How We Use It
+                </h2>
                 <ul style={{ fontSize: '16px', lineHeight: '1.6', color: '#555', paddingLeft: '20px' }}>
-                  <li>Provide and improve our educational services</li>
-                  <li>Process payments and manage your account</li>
-                  <li>Send course updates and educational content</li>
-                  <li>Respond to your questions and provide support</li>
-                  <li>Comply with legal obligations</li>
+                  <li>To create and manage student accounts</li>
+                  <li>To deliver course content, webinars, and masterclasses</li>
+                  <li>To schedule consultations and services</li>
+                  <li>To respond to support requests and inquiries</li>
+                  <li>To send updates, newsletters, or promotional content (you can opt out)</li>
                 </ul>
               </section>
 
-              <section style={{ marginBottom: '40px' }}>
-                <h2 style={{ fontSize: '24px', fontWeight: '600', color: '#024d94', marginBottom: '20px' }}>Information Sharing</h2>
-                <p style={{ fontSize: '16px', lineHeight: '1.6', color: '#555', marginBottom: '15px' }}>
-                  We do not sell, trade, or rent your personal information to third parties. We may share your information only in the following circumstances:
-                </p>
-                <ul style={{ fontSize: '16px', lineHeight: '1.6', color: '#555', paddingLeft: '20px' }}>
-                  <li>With your consent</li>
-                  <li>To comply with legal requirements</li>
-                  <li>With service providers who assist in our operations</li>
-                  <li>To protect our rights and safety</li>
-                </ul>
-              </section>
-
-              <section style={{ marginBottom: '40px' }}>
-                <h2 style={{ fontSize: '24px', fontWeight: '600', color: '#024d94', marginBottom: '20px' }}>Data Security</h2>
+              <section style={{ marginBottom: '50px', padding: '30px', backgroundColor: '#f8f9fa', borderRadius: '8px', borderLeft: '4px solid #024d94' }}>
+                <h2 style={{ fontSize: '24px', fontWeight: '600', color: '#024d94', marginBottom: '20px', display: 'flex', alignItems: 'center' }}>
+                  <span style={{ fontSize: '28px', marginRight: '10px' }}>🔒</span>
+                  Data Security
+                </h2>
                 <p style={{ fontSize: '16px', lineHeight: '1.6', color: '#555' }}>
-                  We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the internet is 100% secure.
+                  We use SSL encryption and secure databases. Data is only shared with third-party providers necessary to deliver our services.
                 </p>
               </section>
 
-              <section style={{ marginBottom: '40px' }}>
-                <h2 style={{ fontSize: '24px', fontWeight: '600', color: '#024d94', marginBottom: '20px' }}>Your Rights</h2>
-                <p style={{ fontSize: '16px', lineHeight: '1.6', color: '#555', marginBottom: '15px' }}>
-                  You have the right to:
-                </p>
+              <section style={{ marginBottom: '50px', padding: '30px', backgroundColor: '#f8f9fa', borderRadius: '8px', borderLeft: '4px solid #f8d171' }}>
+                <h2 style={{ fontSize: '24px', fontWeight: '600', color: '#024d94', marginBottom: '20px', display: 'flex', alignItems: 'center' }}>
+                  <span style={{ fontSize: '28px', marginRight: '10px' }}>⚖️</span>
+                  Your Rights
+                </h2>
                 <ul style={{ fontSize: '16px', lineHeight: '1.6', color: '#555', paddingLeft: '20px' }}>
-                  <li>Access and update your personal information</li>
-                  <li>Request deletion of your data</li>
-                  <li>Opt out of marketing communications</li>
                   <li>Request a copy of your data</li>
+                  <li>Correct or delete your data</li>
+                  <li>Opt out of promotional messages</li>
                 </ul>
               </section>
 
-              <section>
-                <h2 style={{ fontSize: '24px', fontWeight: '600', color: '#024d94', marginBottom: '20px' }}>Contact Us</h2>
-                <p style={{ fontSize: '16px', lineHeight: '1.6', color: '#555' }}>
-                  If you have questions about this Privacy Policy, please contact us at:
-                  <br />
-                  Email: privacy@ralysolutions.com
-                  <br />
-                  Phone: (555) 123-4567
+              <section style={{ padding: '30px', backgroundColor: '#024d94', borderRadius: '8px', color: '#fff' }}>
+                <h2 style={{ fontSize: '24px', fontWeight: '600', color: '#f8d171', marginBottom: '20px', display: 'flex', alignItems: 'center' }}>
+                  <span style={{ fontSize: '28px', marginRight: '10px' }}>📞</span>
+                  Contact Us
+                </h2>
+                <p style={{ fontSize: '16px', lineHeight: '1.6', color: '#fff' }}>
+                  For any privacy concerns, email: privacy@ralysolutions.com
                 </p>
               </section>
 

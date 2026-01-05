@@ -146,7 +146,7 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* Programs */}
+            {/* Legal */}
             <div>
               <h5 style={{
                 fontFamily: 'Nunito Sans, sans-serif',
@@ -156,15 +156,13 @@ export default function Footer() {
                 marginBottom: '25px',
                 textTransform: 'uppercase',
                 letterSpacing: '1px'
-              }}>Programs</h5>
+              }}>Legal</h5>
               <ul style={{ listStyle: 'none', padding: '0', margin: '0' }}>
                 {[
-                  { text: 'CBSPD Certification Prep', href: '#cbspd' },
-                  { text: 'CRCST Certification Prep', href: '#crcst' },
-                  { text: 'SPD Fundamentals Course', href: '#fundamentals' },
-                  { text: 'Advanced Sterilization', href: '#advanced' },
-                  { text: 'Infection Control Training', href: '#infection' },
-                  { text: 'Career Coaching', href: '#coaching' }
+                  { text: 'Privacy Policy', href: '/privacy-policy' },
+                  { text: 'Terms & Conditions', href: '/terms-conditions' },
+                  { text: 'Refund Policy', href: '/refund-policy' },
+                  { text: 'Disclaimer', href: '/disclaimer' }
                 ].map((link, index) => (
                   <li key={index} style={{ marginBottom: '12px' }}>
                     <a href={link.href} style={{
@@ -354,10 +352,10 @@ export default function Footer() {
             </div>
             <div style={{ display: 'flex', gap: '30px', flexWrap: 'wrap' }}>
               {[
-                { text: 'Privacy Policy', href: '#privacy' },
-                { text: 'Terms of Service', href: '#terms' },
-                { text: 'Cookie Policy', href: '#cookies' },
-                { text: 'Accessibility', href: '#accessibility' }
+                { text: 'Privacy Policy', href: '/privacy-policy' },
+                { text: 'Terms & Conditions', href: '/terms-conditions' },
+                { text: 'Refund Policy', href: '/refund-policy' },
+                { text: 'Disclaimer', href: '/disclaimer' }
               ].map((link, index) => (
                 <a key={index} href={link.href} style={{
                   fontFamily: 'Open Sans, sans-serif',

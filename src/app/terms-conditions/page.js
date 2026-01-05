@@ -7,7 +7,7 @@ export default function TermsConditionsPage() {
     <div className="min-h-screen">
       <div className="body">
         <Header />
-        <div style={{ paddingTop: '120px', paddingBottom: '80px' }}>
+        <div style={{ paddingTop: '120px', paddingBottom: '80px', backgroundColor: '#f8f9fa' }}>
           <div className="container" style={{ maxWidth: '900px', margin: '0 auto', padding: '0 15px' }}>
             <div style={{ textAlign: 'center', marginBottom: '50px' }}>
               <h1 style={{ fontSize: '42px', fontWeight: '700', color: '#024d94', marginBottom: '20px', fontFamily: 'Nunito Sans, sans-serif' }}>
@@ -19,79 +19,51 @@ export default function TermsConditionsPage() {
               </p>
             </div>
 
-            <div style={{ backgroundColor: '#fff', padding: '40px', borderRadius: '8px', boxShadow: '0 2px 10px rgba(0,0,0,0.1)' }}>
+            <div style={{ backgroundColor: '#fff', padding: '50px', borderRadius: '12px', boxShadow: '0 10px 30px rgba(0,0,0,0.1)', border: '1px solid #e9ecef' }}>
               
-              <section style={{ marginBottom: '40px' }}>
-                <h2 style={{ fontSize: '24px', fontWeight: '600', color: '#024d94', marginBottom: '20px' }}>Acceptance of Terms</h2>
-                <p style={{ fontSize: '16px', lineHeight: '1.6', color: '#555' }}>
-                  By accessing and using Raly Solutions' educational platform, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.
-                </p>
-              </section>
-
-              <section style={{ marginBottom: '40px' }}>
-                <h2 style={{ fontSize: '24px', fontWeight: '600', color: '#024d94', marginBottom: '20px' }}>Course Access and Usage</h2>
+              <section style={{ marginBottom: '50px', padding: '30px', backgroundColor: '#f8f9fa', borderRadius: '8px', borderLeft: '4px solid #024d94' }}>
+                <h2 style={{ fontSize: '24px', fontWeight: '600', color: '#024d94', marginBottom: '20px', display: 'flex', alignItems: 'center' }}>
+                  <span style={{ fontSize: '28px', marginRight: '10px' }}>📜</span>
+                  Use of Site and Content
+                </h2>
                 <ul style={{ fontSize: '16px', lineHeight: '1.6', color: '#555', paddingLeft: '20px' }}>
-                  <li>Course access is granted for personal, non-commercial use only</li>
-                  <li>You may not share, distribute, or resell course content</li>
-                  <li>Course materials are protected by copyright and intellectual property laws</li>
-                  <li>Access may be revoked for violation of these terms</li>
+                  <li>All course materials, videos, and eBooks are property of Raly Solutions and are for personal use only</li>
+                  <li>You agree not to copy, resell, or redistribute any content without written permission</li>
                 </ul>
               </section>
 
-              <section style={{ marginBottom: '40px' }}>
-                <h2 style={{ fontSize: '24px', fontWeight: '600', color: '#024d94', marginBottom: '20px' }}>Payment Terms</h2>
+              <section style={{ marginBottom: '50px', padding: '30px', backgroundColor: '#f8f9fa', borderRadius: '8px', borderLeft: '4px solid #f8d171' }}>
+                <h2 style={{ fontSize: '24px', fontWeight: '600', color: '#024d94', marginBottom: '20px', display: 'flex', alignItems: 'center' }}>
+                  <span style={{ fontSize: '28px', marginRight: '10px' }}>🎯</span>
+                  Course Access & Subscriptions
+                </h2>
                 <ul style={{ fontSize: '16px', lineHeight: '1.6', color: '#555', paddingLeft: '20px' }}>
-                  <li>All payments are processed securely through third-party providers</li>
-                  <li>Prices are subject to change without notice</li>
-                  <li>Refunds are subject to our refund policy</li>
-                  <li>Failed payments may result in suspension of access</li>
+                  <li>Access to courses is granted upon payment</li>
+                  <li>Subscriptions (if applicable) will auto-renew unless canceled</li>
+                  <li>You're responsible for maintaining login credentials securely</li>
                 </ul>
               </section>
 
-              <section style={{ marginBottom: '40px' }}>
-                <h2 style={{ fontSize: '24px', fontWeight: '600', color: '#024d94', marginBottom: '20px' }}>User Conduct</h2>
-                <p style={{ fontSize: '16px', lineHeight: '1.6', color: '#555', marginBottom: '15px' }}>
-                  You agree not to:
-                </p>
+              <section style={{ marginBottom: '50px', padding: '30px', backgroundColor: '#f8f9fa', borderRadius: '8px', borderLeft: '4px solid #024d94' }}>
+                <h2 style={{ fontSize: '24px', fontWeight: '600', color: '#024d94', marginBottom: '20px', display: 'flex', alignItems: 'center' }}>
+                  <span style={{ fontSize: '28px', marginRight: '10px' }}>📅</span>
+                  Consultation and Booking
+                </h2>
                 <ul style={{ fontSize: '16px', lineHeight: '1.6', color: '#555', paddingLeft: '20px' }}>
-                  <li>Use the platform for any unlawful purpose</li>
-                  <li>Attempt to gain unauthorized access to our systems</li>
-                  <li>Interfere with other users' experience</li>
-                  <li>Upload malicious content or viruses</li>
-                  <li>Impersonate others or provide false information</li>
+                  <li>Live sessions must be booked via our calendar</li>
+                  <li>Cancellation/rescheduling must be done at least 24 hours in advance</li>
                 </ul>
               </section>
 
-              <section style={{ marginBottom: '40px' }}>
-                <h2 style={{ fontSize: '24px', fontWeight: '600', color: '#024d94', marginBottom: '20px' }}>Intellectual Property</h2>
-                <p style={{ fontSize: '16px', lineHeight: '1.6', color: '#555' }}>
-                  All content, including but not limited to text, graphics, logos, images, audio clips, video clips, and software, is the property of Raly Solutions or its content suppliers and is protected by copyright and other intellectual property laws.
-                </p>
-              </section>
-
-              <section style={{ marginBottom: '40px' }}>
-                <h2 style={{ fontSize: '24px', fontWeight: '600', color: '#024d94', marginBottom: '20px' }}>Limitation of Liability</h2>
-                <p style={{ fontSize: '16px', lineHeight: '1.6', color: '#555' }}>
-                  Raly Solutions shall not be liable for any direct, indirect, incidental, special, or consequential damages resulting from the use or inability to use our services, even if we have been advised of the possibility of such damages.
-                </p>
-              </section>
-
-              <section style={{ marginBottom: '40px' }}>
-                <h2 style={{ fontSize: '24px', fontWeight: '600', color: '#024d94', marginBottom: '20px' }}>Termination</h2>
-                <p style={{ fontSize: '16px', lineHeight: '1.6', color: '#555' }}>
-                  We reserve the right to terminate or suspend your account and access to our services at our sole discretion, without notice, for conduct that we believe violates these Terms or is harmful to other users, us, or third parties.
-                </p>
-              </section>
-
-              <section>
-                <h2 style={{ fontSize: '24px', fontWeight: '600', color: '#024d94', marginBottom: '20px' }}>Contact Information</h2>
-                <p style={{ fontSize: '16px', lineHeight: '1.6', color: '#555' }}>
-                  For questions about these Terms & Conditions, please contact us at:
-                  <br />
-                  Email: legal@ralysolutions.com
-                  <br />
-                  Phone: (555) 123-4567
-                </p>
+              <section style={{ padding: '30px', backgroundColor: '#024d94', borderRadius: '8px', color: '#fff' }}>
+                <h2 style={{ fontSize: '24px', fontWeight: '600', color: '#f8d171', marginBottom: '20px', display: 'flex', alignItems: 'center' }}>
+                  <span style={{ fontSize: '28px', marginRight: '10px' }}>⚠️</span>
+                  Limitation of Liability
+                </h2>
+                <ul style={{ fontSize: '16px', lineHeight: '1.6', color: '#fff', paddingLeft: '20px' }}>
+                  <li>We are not liable for technical interruptions, errors, or delays in content access</li>
+                  <li>Education is provided as a tool for learning and growth. Certification outcomes are your responsibility</li>
+                </ul>
               </section>
 
             </div>

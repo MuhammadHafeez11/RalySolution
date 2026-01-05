@@ -2,7 +2,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-export default function RefundPolicyPage() {
+export default function DisclaimerPage() {
   return (
     <div className="min-h-screen">
       <div className="body">
@@ -11,7 +11,7 @@ export default function RefundPolicyPage() {
           <div className="container" style={{ maxWidth: '900px', margin: '0 auto', padding: '0 15px' }}>
             <div style={{ textAlign: 'center', marginBottom: '50px' }}>
               <h1 style={{ fontSize: '42px', fontWeight: '700', color: '#024d94', marginBottom: '20px', fontFamily: 'Nunito Sans, sans-serif' }}>
-                Refund Policy
+                Disclaimer
               </h1>
               <img src="images/line.png" style={{ display: 'block', margin: '0 auto 30px', maxWidth: '100px' }} alt="" />
               <p style={{ fontSize: '16px', color: '#666' }}>
@@ -24,59 +24,32 @@ export default function RefundPolicyPage() {
               <section style={{ marginBottom: '50px', padding: '30px', backgroundColor: '#f8f9fa', borderRadius: '8px', borderLeft: '4px solid #024d94' }}>
                 <h2 style={{ fontSize: '24px', fontWeight: '600', color: '#024d94', marginBottom: '20px', display: 'flex', alignItems: 'center' }}>
                   <span style={{ fontSize: '28px', marginRight: '10px' }}>🎓</span>
-                  Course Refunds
+                  Educational Use Only
                 </h2>
                 <ul style={{ fontSize: '16px', lineHeight: '1.6', color: '#555', paddingLeft: '20px' }}>
-                  <li>Full refund available if requested within 7 days of purchase and the course is less than 20% completed</li>
-                  <li>No refunds after 7 days or if over 20% of course is accessed/downloaded</li>
+                  <li>Our materials are for educational and informational purposes</li>
+                  <li>While we aim to prepare students for certification, we are not a certifying body</li>
                 </ul>
               </section>
 
               <section style={{ marginBottom: '50px', padding: '30px', backgroundColor: '#f8f9fa', borderRadius: '8px', borderLeft: '4px solid #f8d171' }}>
                 <h2 style={{ fontSize: '24px', fontWeight: '600', color: '#024d94', marginBottom: '20px', display: 'flex', alignItems: 'center' }}>
-                  <span style={{ fontSize: '28px', marginRight: '10px' }}>📚</span>
-                  Ebook Purchases
-                </h2>
-                <p style={{ fontSize: '16px', lineHeight: '1.6', color: '#555' }}>
-                  All eBook sales are final. No refunds due to the digital nature of the product.
-                </p>
-              </section>
-
-              <section style={{ marginBottom: '50px', padding: '30px', backgroundColor: '#f8f9fa', borderRadius: '8px', borderLeft: '4px solid #024d94' }}>
-                <h2 style={{ fontSize: '24px', fontWeight: '600', color: '#024d94', marginBottom: '20px', display: 'flex', alignItems: 'center' }}>
-                  <span style={{ fontSize: '28px', marginRight: '10px' }}>💬</span>
-                  Consultations
+                  <span style={{ fontSize: '28px', marginRight: '10px' }}>⚕️</span>
+                  Medical Disclaimer
                 </h2>
                 <ul style={{ fontSize: '16px', lineHeight: '1.6', color: '#555', paddingLeft: '20px' }}>
-                  <li>Cancel 24 hours prior to session for full refund/reschedule</li>
-                  <li>No refund for no-shows or cancellations under 24 hours</li>
-                </ul>
-              </section>
-
-              <section style={{ marginBottom: '50px', padding: '30px', backgroundColor: '#f8f9fa', borderRadius: '8px', borderLeft: '4px solid #f8d171' }}>
-                <h2 style={{ fontSize: '24px', fontWeight: '600', color: '#024d94', marginBottom: '20px', display: 'flex', alignItems: 'center' }}>
-                  <span style={{ fontSize: '28px', marginRight: '10px' }}>🔄</span>
-                  Subscriptions
-                </h2>
-                <ul style={{ fontSize: '16px', lineHeight: '1.6', color: '#555', paddingLeft: '20px' }}>
-                  <li>Cancel anytime via your account dashboard</li>
-                  <li>Access continues until current billing cycle ends</li>
+                  <li>No part of our training replaces professional healthcare training or practice</li>
+                  <li>Always consult relevant governing bodies for licensing or practice requirements</li>
                 </ul>
               </section>
 
               <section style={{ padding: '30px', backgroundColor: '#024d94', borderRadius: '8px', color: '#fff' }}>
                 <h2 style={{ fontSize: '24px', fontWeight: '600', color: '#f8d171', marginBottom: '20px', display: 'flex', alignItems: 'center' }}>
-                  <span style={{ fontSize: '28px', marginRight: '10px' }}>📞</span>
-                  Contact Us
+                  <span style={{ fontSize: '28px', marginRight: '10px' }}>📈</span>
+                  Results Vary
                 </h2>
                 <p style={{ fontSize: '16px', lineHeight: '1.6', color: '#fff' }}>
-                  For refund requests or questions about this policy:
-                  <br />
-                  Email: refunds@ralysolutions.com
-                  <br />
-                  Phone: (555) 123-4567
-                  <br />
-                  Business Hours: Monday-Friday, 9 AM - 5 PM EST
+                  We do not guarantee job placement, certification, or earnings. Your results depend on your effort and application of knowledge.
                 </p>
               </section>
 

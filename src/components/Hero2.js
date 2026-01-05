@@ -1,15 +1,15 @@
 export default function Hero2() {
   return (
-    <div id="hero" className="intro hero2" style={{paddingTop: '120px'}}>
+    <div id="hero" className="intro hero2" style={{paddingTop: '150px'}}>
       <div className="container">
         <div className="row">
           <div className="col-md-10 col-md-offset-1 text-center">
             <h3 style={{
               fontSize: '48px',
               fontWeight: '700',
-              color: '#024d94',
+              color: '#000000',
               marginBottom: '20px',
-              fontFamily: 'Nunito Sans, sans-serif',
+              fontFamily: 'Poppins, sans-serif',
               lineHeight: '1.2'
             }}>Empowering the Next Generation of<br />Sterile Processing Professionals</h3>
             <p style={{
