@@ -54,7 +54,7 @@ export default function Header() {
                 letterSpacing: '5px',
                 textDecoration: 'none'
               }}>
-                <img src="/realLogo.jpeg" alt="Raly Solutions Logo" style={{ height: '86px', width: 'auto' }} />
+                <img src="/logobg.png" alt="Raly Solutions Logo" style={{ height: '86px', width: 'auto' }} />
               </a>
             </div>
 
@@ -80,14 +80,14 @@ export default function Header() {
                       padding: '40px 12px 35px',
                       fontSize: '14px',
                       lineHeight: 1.6,
-                      color: '#024d94',
+                      color: isScrolled ? '#024d94' : '#fff',
                       fontFamily: 'Nunito Sans',
                       fontWeight: 700,
                       textDecoration: 'none',
                       display: 'block'
                     }}
-                    onMouseOver={(e) => e.target.style.color = '#000000'}
-                    onMouseOut={(e) => e.target.style.color = '#024d94'}
+                    onMouseOver={(e) => e.target.style.color = isScrolled ? '#000000' : '#f8d171'}
+                    onMouseOut={(e) => e.target.style.color = isScrolled ? '#024d94' : '#fff'}
                   >
                     Home
                   </a>
@@ -99,14 +99,14 @@ export default function Header() {
                       padding: '40px 12px 35px',
                       fontSize: '14px',
                       lineHeight: 1.6,
-                      color: '#024d94',
+                      color: isScrolled ? '#024d94' : '#fff',
                       fontFamily: 'Nunito Sans',
                       fontWeight: 700,
                       textDecoration: 'none',
                       display: 'block'
                     }}
-                    onMouseOver={(e) => e.target.style.color = '#000000'}
-                    onMouseOut={(e) => e.target.style.color = '#024d94'}
+                    onMouseOver={(e) => e.target.style.color = isScrolled ? '#000000' : '#f8d171'}
+                    onMouseOut={(e) => e.target.style.color = isScrolled ? '#024d94' : '#fff'}
                   >
                     About
                   </a>
@@ -118,14 +118,14 @@ export default function Header() {
                       padding: '40px 12px 35px',
                       fontSize: '14px',
                       lineHeight: 1.6,
-                      color: '#024d94',
+                      color: isScrolled ? '#024d94' : '#fff',
                       fontFamily: 'Nunito Sans',
                       fontWeight: 700,
                       textDecoration: 'none',
                       display: 'block'
                     }}
-                    onMouseOver={(e) => e.target.style.color = '#000000'}
-                    onMouseOut={(e) => e.target.style.color = '#024d94'}
+                    onMouseOver={(e) => e.target.style.color = isScrolled ? '#000000' : '#f8d171'}
+                    onMouseOut={(e) => e.target.style.color = isScrolled ? '#024d94' : '#fff'}
                   >
                     Courses
                   </a>
@@ -137,14 +137,14 @@ export default function Header() {
                       padding: '40px 12px 35px',
                       fontSize: '14px',
                       lineHeight: 1.6,
-                      color: '#024d94',
+                      color: isScrolled ? '#024d94' : '#fff',
                       fontFamily: 'Nunito Sans',
                       fontWeight: 700,
                       textDecoration: 'none',
                       display: 'block'
                     }}
-                    onMouseOver={(e) => e.target.style.color = '#000000'}
-                    onMouseOut={(e) => e.target.style.color = '#024d94'}
+                    onMouseOver={(e) => e.target.style.color = isScrolled ? '#000000' : '#f8d171'}
+                    onMouseOut={(e) => e.target.style.color = isScrolled ? '#024d94' : '#fff'}
                   >
                     Consulting
                   </a>
@@ -156,14 +156,14 @@ export default function Header() {
                       padding: '40px 12px 35px',
                       fontSize: '14px',
                       lineHeight: 1.6,
-                      color: '#024d94',
+                      color: isScrolled ? '#024d94' : '#fff',
                       fontFamily: 'Nunito Sans',
                       fontWeight: 700,
                       textDecoration: 'none',
                       display: 'block'
                     }}
-                    onMouseOver={(e) => e.target.style.color = '#000000'}
-                    onMouseOut={(e) => e.target.style.color = '#024d94'}
+                    onMouseOver={(e) => e.target.style.color = isScrolled ? '#000000' : '#f8d171'}
+                    onMouseOut={(e) => e.target.style.color = isScrolled ? '#024d94' : '#fff'}
                   >
                     Coaching
                   </a>
@@ -175,14 +175,14 @@ export default function Header() {
                       padding: '40px 12px 35px',
                       fontSize: '14px',
                       lineHeight: 1.6,
-                      color: '#024d94',
+                      color: isScrolled ? '#024d94' : '#fff',
                       fontFamily: 'Nunito Sans',
                       fontWeight: 700,
                       textDecoration: 'none',
                       display: 'block'
                     }}
-                    onMouseOver={(e) => e.target.style.color = '#000000'}
-                    onMouseOut={(e) => e.target.style.color = '#024d94'}
+                    onMouseOver={(e) => e.target.style.color = isScrolled ? '#000000' : '#f8d171'}
+                    onMouseOut={(e) => e.target.style.color = isScrolled ? '#024d94' : '#fff'}
                   >
                     Contact
                   </a>

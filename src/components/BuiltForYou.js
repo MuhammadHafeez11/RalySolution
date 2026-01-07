@@ -4,11 +4,18 @@ export default function BuiltForYou() {
       paddingTop: '100px',
       paddingBottom: '100px'
     }}>
-      <div style={{ display: 'flex', alignItems: 'center', minHeight: '500px' }}>
+      <div style={{ 
+        maxWidth: '1200px',
+        margin: '0 auto',
+        padding: '0 15px',
+        display: 'flex', 
+        alignItems: 'center', 
+        minHeight: '500px' 
+      }}>
         <div style={{ flex: '1', paddingLeft: '0' }}>
           <img src="images/feature/why.png" style={{ 
             width: '100%', 
-            maxWidth: '500px',
+            maxWidth: '600px',
             height: 'auto'
           }} alt="Built for You" />
         </div>
