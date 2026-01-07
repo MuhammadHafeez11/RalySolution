@@ -5,8 +5,8 @@ export default function WhatIsRaly() {
         <div style={{ display: 'flex', alignItems: 'center', gap: '60px' }}>
           <div style={{ flex: '1' }}>
             <h3 style={{
-              fontSize: '36px',
-              fontWeight: '700',
+              fontSize: '60px',
+              fontWeight: '900',
               color: '#024d94',
               marginBottom: '20px',
               fontFamily: 'Nunito Sans, sans-serif'

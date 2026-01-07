@@ -1,6 +1,6 @@
 'use client';
 import Header from '@/components/Header';
-import Hero2 from '@/components/Hero2';
+import Hero1 from '@/components/Hero1';
 import WhatIsRaly from '@/components/WhatIsRaly';
 import WhatWeOffer from '@/components/WhatWeOffer';
 import BuiltForYou from '@/components/BuiltForYou';
@@ -25,7 +25,7 @@ export default function Home() {
     <div className="min-h-screen">
       <div className="body">
         <Header />
-        <Hero2 />
+        <Hero1 />
         <WhatIsRaly />
         <WhatWeOffer />
         <BuiltForYou />

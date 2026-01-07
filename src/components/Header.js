@@ -54,7 +54,7 @@ export default function Header() {
                 letterSpacing: '5px',
                 textDecoration: 'none'
               }}>
-                <img src="/images/logo.png" alt="logo" />
+                <img src="/realLogo.jpeg" alt="Raly Solutions Logo" style={{ height: '86px', width: 'auto' }} />
               </a>
             </div>
 
