@@ -41,7 +41,7 @@ export default function WhatWeOffer() {
                   marginRight: '20px',
                   flexShrink: 0
                 }}>
-                  <span style={{ fontSize: '40px', color: '#024d94' }}>📚</span>
+                  <img src="/icons/computer, monitor, screen, education, school, browser, website@1x.png" alt="Online Courses" style={{ width: '40px', height: '40px' }} />
                 </div>
                 <div className="Protem-feature">
                   <a href="/courses">
@@ -75,7 +75,7 @@ export default function WhatWeOffer() {
                   marginRight: '20px',
                   flexShrink: 0
                 }}>
-                  <span style={{ fontSize: '40px', color: '#024d94' }}>🎥</span>
+                  <img src="/icons/lecture, presentation, play, media, multimedia, students, education@1x.png" alt="Live Masterclasses" style={{ width: '40px', height: '40px' }} />
                 </div>
                 <div className="Protem-feature">
                   <a href="/webinar-registration">
@@ -109,7 +109,7 @@ export default function WhatWeOffer() {
                   marginRight: '20px',
                   flexShrink: 0
                 }}>
-                  <span style={{ fontSize: '40px', color: '#024d94' }}>🏆</span>
+                  <img src="/icons/certificate, browser, webpage, website, education, school@1x.png" alt="Certification Prep" style={{ width: '40px', height: '40px' }} />
                 </div>
                 <div className="Protem-feature">
                   <a href="/pricing">
@@ -143,7 +143,7 @@ export default function WhatWeOffer() {
                   marginRight: '20px',
                   flexShrink: 0
                 }}>
-                  <span style={{ fontSize: '40px', color: '#024d94' }}>📖</span>
+                  <img src="/icons/ebook, book, read, education, school, media, multimedia@1x.png" alt="eBooks & Resources" style={{ width: '40px', height: '40px' }} />
                 </div>
                 <div className="Protem-feature">
                   <a href="/lead-magnet">

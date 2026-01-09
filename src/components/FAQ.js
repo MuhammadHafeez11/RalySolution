@@ -72,7 +72,7 @@ export default function FAQ() {
         <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 15px' }}>
           <div style={{ display: 'flex', gap: '60px', alignItems: 'flex-start' }}>
             <div style={{ flex: '1', minWidth: '300px' }}>
-              <img src="/images/WhatsApp Image 2026-01-09 at 11.28.32 AM.jpeg" style={{ maxWidth: '100%', height: 'auto' }} alt="FAQ" />
+              <img src="/images/faq.jpeg" style={{ maxWidth: '100%', height: 'auto' }} alt="FAQ" />
             </div>
             <div style={{ flex: '1', minWidth: '300px' }}>
               <div style={{ maxWidth: '500px', margin: '0 auto' }}>

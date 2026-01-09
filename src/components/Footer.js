@@ -42,6 +42,7 @@ export default function Footer() {
                   borderRadius: '50%',
                   color: '#024d94',
                   fontSize: '18px',
+                  fontWeight: 'bold',
                   textDecoration: 'none',
                   transition: 'all 0.3s ease'
                 }}
@@ -62,7 +63,8 @@ export default function Footer() {
                   backgroundColor: '#f8d171',
                   borderRadius: '50%',
                   color: '#024d94',
-                  fontSize: '18px',
+                  fontSize: '14px',
+                  fontWeight: 'bold',
                   textDecoration: 'none',
                   transition: 'all 0.3s ease'
                 }}
@@ -83,7 +85,8 @@ export default function Footer() {
                   backgroundColor: '#f8d171',
                   borderRadius: '50%',
                   color: '#024d94',
-                  fontSize: '18px',
+                  fontSize: '16px',
+                  fontWeight: 'bold',
                   textDecoration: 'none',
                   transition: 'all 0.3s ease'
                 }}
@@ -95,6 +98,28 @@ export default function Footer() {
                   e.target.style.backgroundColor = '#f8d171';
                   e.target.style.transform = 'translateY(0)';
                 }}>▶</a>
+                <a href="#twitter" style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  width: '40px',
+                  height: '40px',
+                  backgroundColor: '#f8d171',
+                  borderRadius: '50%',
+                  color: '#024d94',
+                  fontSize: '16px',
+                  fontWeight: 'bold',
+                  textDecoration: 'none',
+                  transition: 'all 0.3s ease'
+                }}
+                onMouseEnter={(e) => {
+                  e.target.style.backgroundColor = '#fff';
+                  e.target.style.transform = 'translateY(-2px)';
+                }}
+                onMouseLeave={(e) => {
+                  e.target.style.backgroundColor = '#f8d171';
+                  e.target.style.transform = 'translateY(0)';
+                }}>𝕏</a>
               </div>
             </div>
 
@@ -217,7 +242,7 @@ export default function Footer() {
                     marginTop: '2px',
                     flexShrink: '0'
                   }}>
-                    <span style={{ color: '#024d94', fontSize: '12px', fontWeight: 'bold' }}>@</span>
+                    <img src="/icons/email, browser, education, school, webpage, website, newsletter@1x.png" alt="Email" style={{ width: '12px', height: '12px' }} />
                   </div>
                   <div>
                     <p style={{
@@ -242,7 +267,7 @@ export default function Footer() {
                     marginTop: '2px',
                     flexShrink: '0'
                   }}>
-                    <span style={{ color: '#024d94', fontSize: '12px', fontWeight: 'bold' }}>📞</span>
+                    <img src="/icons/smartphone, phone, mobile, q, a, questions, answers@1x.png" alt="Phone" style={{ width: '12px', height: '12px' }} />
                   </div>
                   <div>
                     <p style={{
@@ -267,7 +292,7 @@ export default function Footer() {
                     marginTop: '2px',
                     flexShrink: '0'
                   }}>
-                    <span style={{ color: '#024d94', fontSize: '12px', fontWeight: 'bold' }}>📍</span>
+                    <img src="/icons/geography, earth, location, education, school@1x.png" alt="Location" style={{ width: '12px', height: '12px' }} />
                   </div>
                   <div>
                     <p style={{

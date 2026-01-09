@@ -6,7 +6,7 @@ export default function FreeEbook() {
         <div className="text-center mb-16">
           <div className="text-lg font-semibold text-[#f8d171] mb-2">FREE eBOOK</div>
           <h2 className="text-5xl font-bold text-[#024d94] mb-6">"Sterile Processing Essentials"</h2>
-          <img src="images/line.png" className="mx-auto mb-8" alt="" />
+          <img src="/images/line.png" className="mx-auto mb-8" alt="" />
           <h3 className="text-3xl font-bold text-gray-800 mb-4">Unlock Your Future in Healthcare—Start with This Free eBook!</h3>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Learn the foundations of sterile processing, infection control, and how to build a rewarding career in one of the most in-demand healthcare roles.
@@ -17,39 +17,39 @@ export default function FreeEbook() {
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Left Column - What You'll Discover */}
           <div>
-            <h4 className="text-3xl font-bold text-[#024d94] mb-8">What You'll Discover:</h4>
+            <h4 className="text-3xl font-bold text-[#024d94]" style={{ marginBottom: '20px' }}>What You'll Discover:</h4>
             <div className="space-y-6">
-              <div className="flex items-start">
-                <div className="w-8 h-8 bg-[#024d94] rounded-full flex items-center justify-center mr-4 flex-shrink-0 mt-1">
-                  <i className="icon-check text-white text-sm"></i>
+              <div className="flex items-center">
+                <div className="w-12 h-12 bg-[#f8d171] rounded-full flex items-center justify-center mr-5 flex-shrink-0">
+                  <img src="/icons/read, book, media, ebook, keyboard, mouse, education, school@1x.png" alt="What is SPD" style={{ width: '20px', height: '20px' }} />
                 </div>
                 <p className="text-lg text-gray-700">What sterile processing is and why it matters</p>
               </div>
               
-              <div className="flex items-start">
-                <div className="w-8 h-8 bg-[#024d94] rounded-full flex items-center justify-center mr-4 flex-shrink-0 mt-1">
-                  <i className="icon-check text-white text-sm"></i>
+              <div className="flex items-center">
+                <div className="w-12 h-12 bg-[#f8d171] rounded-full flex items-center justify-center mr-5 flex-shrink-0">
+                  <img src="/icons/graduate, graduation, girl, woman, laptop, education, school@1x.png" alt="Career Paths" style={{ width: '20px', height: '20px' }} />
                 </div>
                 <p className="text-lg text-gray-700">Career pathways and job outlook</p>
               </div>
               
-              <div className="flex items-start">
-                <div className="w-8 h-8 bg-[#024d94] rounded-full flex items-center justify-center mr-4 flex-shrink-0 mt-1">
-                  <i className="icon-check text-white text-sm"></i>
+              <div className="flex items-center">
+                <div className="w-12 h-12 bg-[#f8d171] rounded-full flex items-center justify-center mr-5 flex-shrink-0">
+                  <img src="/icons/man, office, desk, computer, monitor, workspace@1x.png" alt="Daily Tools" style={{ width: '20px', height: '20px' }} />
                 </div>
                 <p className="text-lg text-gray-700">Key responsibilities and tools used daily</p>
               </div>
               
-              <div className="flex items-start">
-                <div className="w-8 h-8 bg-[#024d94] rounded-full flex items-center justify-center mr-4 flex-shrink-0 mt-1">
-                  <i className="icon-check text-white text-sm"></i>
+              <div className="flex items-center">
+                <div className="w-12 h-12 bg-[#f8d171] rounded-full flex items-center justify-center mr-5 flex-shrink-0">
+                  <img src="/icons/user, account, book, ebook, graduation, options, preferences@1x.png" alt="Certification" style={{ width: '20px', height: '20px' }} />
                 </div>
                 <p className="text-lg text-gray-700">How to become certified</p>
               </div>
               
-              <div className="flex items-start">
-                <div className="w-8 h-8 bg-[#f8d171] rounded-full flex items-center justify-center mr-4 flex-shrink-0 mt-1">
-                  <i className="icon-star text-[#024d94] text-sm"></i>
+              <div className="flex items-center">
+                <div className="w-12 h-12 bg-[#f8d171] rounded-full flex items-center justify-center mr-5 flex-shrink-0">
+                  <img src="/icons/lightbulb, light, education, innovation, thought, idea@1x.png" alt="Pro Tips" style={{ width: '20px', height: '20px' }} />
                 </div>
                 <p className="text-lg text-gray-700 font-semibold">BONUS: Pro tips from the instructor</p>
               </div>
@@ -78,7 +78,7 @@ export default function FreeEbook() {
             <div className="bg-white rounded-2xl shadow-xl p-8 border-t-4 border-[#024d94]">
               <div className="text-center mb-8">
                 <div className="w-20 h-20 bg-[#f8d171] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <i className="icon-download text-[#024d94] text-3xl"></i>
+                  <img src="/icons/ebook, book, read, education, school, media, multimedia@1x.png" alt="Download" style={{ width: '40px', height: '40px' }} />
                 </div>
                 <h4 className="text-2xl font-bold text-[#024d94] mb-2">Get Your Free eBook</h4>
                 <p className="text-gray-600">Download instantly - no waiting!</p>

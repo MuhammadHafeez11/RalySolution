@@ -14,12 +14,12 @@ export default function Contact() {
         <div className="grid lg:grid-cols-2 gap-16">
           {/* Contact Information */}
           <div>
-            <h4 className="text-3xl font-bold text-[#024d94] mb-8">Contact Options</h4>
+            <h4 className="text-3xl font-bold text-[#024d94]" style={{ marginBottom: '20px' }}>Contact Options</h4>
             
             <div className="space-y-6">
               <div className="flex items-start p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-                <div className="w-12 h-12 bg-[#024d94] rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                  <i className="icon-envelope text-white text-xl"></i>
+                <div className="w-12 h-12 bg-[#f8d171] rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <img src="/icons/email, browser, education, school, webpage, website, newsletter@1x.png" alt="Email" style={{ width: '20px', height: '20px' }} />
                 </div>
                 <div>
                   <h5 className="text-xl font-bold text-[#024d94] mb-2">Email</h5>
@@ -29,7 +29,7 @@ export default function Contact() {
 
               <div className="flex items-start p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
                 <div className="w-12 h-12 bg-[#f8d171] rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                  <i className="icon-phone text-[#024d94] text-xl"></i>
+                  <img src="/icons/login, smartphone, phone, mobile, education, school, electronic, device@1x.png" alt="Phone" style={{ width: '20px', height: '20px' }} />
                 </div>
                 <div>
                   <h5 className="text-xl font-bold text-[#024d94] mb-2">Phone</h5>
@@ -38,8 +38,8 @@ export default function Contact() {
               </div>
 
               <div className="flex items-start p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
-                <div className="w-12 h-12 bg-[#024d94] rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                  <i className="icon-chat text-white text-xl"></i>
+                <div className="w-12 h-12 bg-[#f8d171] rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <img src="/icons/smartphone, phone, mobile, q, a, questions, answers@1x.png" alt="Live Chat" style={{ width: '20px', height: '20px' }} />
                 </div>
                 <div>
                   <h5 className="text-xl font-bold text-[#024d94] mb-2">Live Chat</h5>
@@ -49,7 +49,7 @@ export default function Contact() {
 
               <div className="flex items-start p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
                 <div className="w-12 h-12 bg-[#f8d171] rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                  <i className="icon-location text-[#024d94] text-xl"></i>
+                  <img src="/icons/geography, earth, location, education, school@1x.png" alt="Address" style={{ width: '20px', height: '20px' }} />
                 </div>
                 <div>
                   <h5 className="text-xl font-bold text-[#024d94] mb-2">Address</h5>
