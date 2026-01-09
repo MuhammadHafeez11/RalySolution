@@ -5,7 +5,7 @@ export default function Courses() {
         {/* Header */}
         <div className="text-center mb-20">
           <h3 className="text-5xl font-bold text-[#024d94] mb-6">Our Training Programs</h3>
-          <img src="images/line.png" className="mx-auto mb-8" alt="" />
+          <img src="/images/line.png" className="mx-auto mb-8" alt="" />
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             At Raly Solutions, we offer self-paced online courses, instructor-led webinars, and live coaching sessions designed for:
           </p>

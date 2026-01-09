@@ -15,7 +15,7 @@ export default function WhatWeOffer() {
             lineHeight: '62px',
             fontFamily: 'Nunito Sans, sans-serif'
           }}>What We Offer</h3>
-          <img src="images/line.png" className="img-responsive center-block" style={{ 
+          <img src="/images/line.png" className="img-responsive center-block" style={{ 
             display: 'block', 
             margin: '0 auto 30px',
             maxWidth: '100px'

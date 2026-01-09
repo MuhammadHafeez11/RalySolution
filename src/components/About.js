@@ -154,7 +154,7 @@ export default function About() {
               </a>
             </div>
             <div style={{ flex: '1', minWidth: '300px', textAlign: 'center' }}>
-              <img src="/images/feature/01.png" style={{ maxWidth: '100%', height: 'auto' }} alt="" />
+              <img src="/images/WhatsApp Image 2026-01-09 at 11.28.29 AM.jpeg" style={{ maxWidth: '100%', height: 'auto' }} alt="" />
             </div>
           </div>
         </div>

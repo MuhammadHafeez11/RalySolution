@@ -16,7 +16,7 @@ export default function Coaching() {
             lineHeight: '62px',
             fontFamily: 'Nunito Sans, sans-serif'
           }}>Book a One-on-One Session with Our Expert Instructor</h3>
-          <img src="images/line.png" style={{ 
+          <img src="/images/line.png" style={{ 
             display: 'block', 
             margin: '0 auto 30px',
             maxWidth: '100px'

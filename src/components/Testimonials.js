@@ -34,7 +34,7 @@ export default function Testimonials() {
                     fontStyle: 'italic',
                     fontFamily: 'Open Sans, sans-serif'
                   }}>"Raly Solutions helped me land a job in sterile processing right after I completed the course!"</p>
-                  <img src="./images/bg/five-star.png" alt="img" style={{ maxWidth: '120px', padding: '0px 0px 15px 15px' }} />
+                  <img src="/images/bg/five-star.png" alt="img" style={{ maxWidth: '120px', padding: '0px 0px 15px 15px' }} />
                   <span style={{
                     fontWeight: 'bold',
                     fontSize: '16px',
@@ -68,7 +68,7 @@ export default function Testimonials() {
                     fontStyle: 'italic',
                     fontFamily: 'Open Sans, sans-serif'
                   }}>"The ebook was a game-changer. It opened my eyes to the importance of SPD in patient care."</p>
-                  <img src="./images/bg/five-star.png" alt="img" style={{ maxWidth: '120px', padding: '0px 0px 15px 15px' }} />
+                  <img src="/images/bg/five-star.png" alt="img" style={{ maxWidth: '120px', padding: '0px 0px 15px 15px' }} />
                   <span style={{
                     fontWeight: 'bold',
                     fontSize: '16px',

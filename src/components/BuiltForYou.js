@@ -13,7 +13,7 @@ export default function BuiltForYou() {
         minHeight: '500px' 
       }}>
         <div style={{ flex: '1', paddingLeft: '0' }}>
-          <img src="images/feature/why.png" style={{ 
+          <img src="/images/WhatsApp Image 2026-01-09 at 11.28.31 AM.jpeg" style={{ 
             width: '100%', 
             maxWidth: '600px',
             height: 'auto'
@@ -32,7 +32,7 @@ export default function BuiltForYou() {
             marginBottom: '20px',
             fontFamily: 'Nunito Sans, sans-serif'
           }}>Built for You</h1>
-          <img src="images/line.png" style={{ marginBottom: '30px' }} alt="" />
+          <img src="/images/line.png" style={{ marginBottom: '30px' }} alt="" />
           <p style={{
             fontSize: '18px',
             lineHeight: '28px',

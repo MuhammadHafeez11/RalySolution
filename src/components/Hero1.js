@@ -57,7 +57,7 @@ export default function Hero1() {
           <br /><br />
           <div className="col-sm-4 col-md-6" style={{ textAlign: 'center' }}>
             <img 
-              src="images/feature/hero.png" 
+              src="/images/WhatsApp Image 2026-01-09 at 11.28.28 AM.jpeg" 
               className="img-responsive" 
               alt="Sterile Processing Training" 
               style={{ 

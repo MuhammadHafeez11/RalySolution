@@ -1,9 +1,12 @@
 'use client';
 import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
+  const isHomePage = pathname === '/';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -13,6 +16,9 @@ export default function Header() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const shouldShowWhiteBg = !isHomePage || isScrolled;
+  const textColor = shouldShowWhiteBg ? '#024d94' : '#fff';
 
   return (
     <header>
@@ -24,13 +30,13 @@ export default function Header() {
         fontFamily: 'Nunito Sans, sans-serif',
         borderWidth: 0,
         borderRadius: 0,
-        background: isScrolled ? '#fff' : 'transparent',
+        background: shouldShowWhiteBg ? '#fff' : 'transparent',
         zIndex: 1030,
-        minHeight: isScrolled ? '35px' : '86px',
+        minHeight: shouldShowWhiteBg ? '35px' : '86px',
         marginBottom: 0,
         border: 'none',
         transition: 'all 0.4s',
-        boxShadow: isScrolled ? '0 2px 10px rgba(0,0,0,0.1)' : 'none'
+        boxShadow: shouldShowWhiteBg ? '0 2px 10px rgba(0,0,0,0.1)' : 'none'
       }}>
         <div style={{
           maxWidth: '1170px',
@@ -41,7 +47,7 @@ export default function Header() {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
-            minHeight: isScrolled ? '35px' : '86px'
+            minHeight: shouldShowWhiteBg ? '35px' : '86px'
           }}>
             {/* Logo */}
             <div>
@@ -80,33 +86,33 @@ export default function Header() {
                       padding: '40px 12px 35px',
                       fontSize: '14px',
                       lineHeight: 1.6,
-                      color: isScrolled ? '#024d94' : '#fff',
+                      color: textColor,
                       fontFamily: 'Nunito Sans',
                       fontWeight: 700,
                       textDecoration: 'none',
                       display: 'block'
                     }}
-                    onMouseOver={(e) => e.target.style.color = isScrolled ? '#000000' : '#f8d171'}
-                    onMouseOut={(e) => e.target.style.color = isScrolled ? '#024d94' : '#fff'}
+                    onMouseOver={(e) => e.target.style.color = '#000000'}
+                    onMouseOut={(e) => e.target.style.color = textColor}
                   >
                     Home
                   </a>
                 </li>
                 <li>
                   <a 
-                    href="#about"
+                    href="/about"
                     style={{
                       padding: '40px 12px 35px',
                       fontSize: '14px',
                       lineHeight: 1.6,
-                      color: isScrolled ? '#024d94' : '#fff',
+                      color: textColor,
                       fontFamily: 'Nunito Sans',
                       fontWeight: 700,
                       textDecoration: 'none',
                       display: 'block'
                     }}
-                    onMouseOver={(e) => e.target.style.color = isScrolled ? '#000000' : '#f8d171'}
-                    onMouseOut={(e) => e.target.style.color = isScrolled ? '#024d94' : '#fff'}
+                    onMouseOver={(e) => e.target.style.color = '#000000'}
+                    onMouseOut={(e) => e.target.style.color = textColor}
                   >
                     About
                   </a>
@@ -118,14 +124,14 @@ export default function Header() {
                       padding: '40px 12px 35px',
                       fontSize: '14px',
                       lineHeight: 1.6,
-                      color: isScrolled ? '#024d94' : '#fff',
+                      color: textColor,
                       fontFamily: 'Nunito Sans',
                       fontWeight: 700,
                       textDecoration: 'none',
                       display: 'block'
                     }}
-                    onMouseOver={(e) => e.target.style.color = isScrolled ? '#000000' : '#f8d171'}
-                    onMouseOut={(e) => e.target.style.color = isScrolled ? '#024d94' : '#fff'}
+                    onMouseOver={(e) => e.target.style.color = '#000000'}
+                    onMouseOut={(e) => e.target.style.color = textColor}
                   >
                     Courses
                   </a>
@@ -137,14 +143,14 @@ export default function Header() {
                       padding: '40px 12px 35px',
                       fontSize: '14px',
                       lineHeight: 1.6,
-                      color: isScrolled ? '#024d94' : '#fff',
+                      color: textColor,
                       fontFamily: 'Nunito Sans',
                       fontWeight: 700,
                       textDecoration: 'none',
                       display: 'block'
                     }}
-                    onMouseOver={(e) => e.target.style.color = isScrolled ? '#000000' : '#f8d171'}
-                    onMouseOut={(e) => e.target.style.color = isScrolled ? '#024d94' : '#fff'}
+                    onMouseOver={(e) => e.target.style.color = '#000000'}
+                    onMouseOut={(e) => e.target.style.color = textColor}
                   >
                     Consulting
                   </a>
@@ -156,14 +162,14 @@ export default function Header() {
                       padding: '40px 12px 35px',
                       fontSize: '14px',
                       lineHeight: 1.6,
-                      color: isScrolled ? '#024d94' : '#fff',
+                      color: textColor,
                       fontFamily: 'Nunito Sans',
                       fontWeight: 700,
                       textDecoration: 'none',
                       display: 'block'
                     }}
-                    onMouseOver={(e) => e.target.style.color = isScrolled ? '#000000' : '#f8d171'}
-                    onMouseOut={(e) => e.target.style.color = isScrolled ? '#024d94' : '#fff'}
+                    onMouseOver={(e) => e.target.style.color = '#000000'}
+                    onMouseOut={(e) => e.target.style.color = textColor}
                   >
                     Coaching
                   </a>
@@ -175,14 +181,14 @@ export default function Header() {
                       padding: '40px 12px 35px',
                       fontSize: '14px',
                       lineHeight: 1.6,
-                      color: isScrolled ? '#024d94' : '#fff',
+                      color: textColor,
                       fontFamily: 'Nunito Sans',
                       fontWeight: 700,
                       textDecoration: 'none',
                       display: 'block'
                     }}
-                    onMouseOver={(e) => e.target.style.color = isScrolled ? '#000000' : '#f8d171'}
-                    onMouseOut={(e) => e.target.style.color = isScrolled ? '#024d94' : '#fff'}
+                    onMouseOver={(e) => e.target.style.color = '#000000'}
+                    onMouseOut={(e) => e.target.style.color = textColor}
                   >
                     Contact
                   </a>
